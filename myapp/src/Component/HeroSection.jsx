@@ -14,7 +14,7 @@ import {
   IconButton,
   useColorModeValue,
 } from "@chakra-ui/react";
-// 
+
 
 const Logo = (props) => {
   return (
