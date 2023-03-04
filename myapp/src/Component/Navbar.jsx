@@ -20,7 +20,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { GoThreeBars } from "react-icons/go";
 import { NavLink } from "react-router-dom";
 
-import "./Home.css"
+import "../css/navbar_hero.css";
 
 
 
@@ -67,7 +67,6 @@ export function Navbar() {
         ) : null}
       </div>
 
-      <Box p={4}>Main Content Here</Box>
     </>
   );
 }
