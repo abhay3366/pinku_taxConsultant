@@ -30,14 +30,13 @@ const Choose = () => {
 
           <Stack>
             <CardBody pr={9}>
-              <Heading size="sm" bg={"#FFAB66 "} display={"inline-block"}>
+              <Heading size="sm" bg={"#2EB9C4 "} display={"inline-block"} p={2}>
                 Why Choose Us
               </Heading>
 
               <Text py="9" fontSize="4xl">
                 We{" "}
-                <span style={{ backgroundColor: "#FFAB66" }}>
-                 
+                <span style={{ backgroundColor: "#2EB9C4" }}>
                   Experienced In Tax Preparation
                 </span>
                 , Business And Financial Services.

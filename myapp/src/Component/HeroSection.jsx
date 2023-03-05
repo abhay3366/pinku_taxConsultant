@@ -94,7 +94,7 @@ const HeroSection = () => {
         </div>
         <div className="hero-image-container">
           <figure>
-            <img src="./images/ab.png" alt="heroImg" className="hero-image" />
+            <img src="./images/hero.gif" alt="heroImg" className="hero-image" />
           </figure>
         </div>
       </div>

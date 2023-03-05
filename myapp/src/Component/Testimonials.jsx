@@ -12,7 +12,7 @@ export default function Testimonials() {
   return (
     <div className="testimonials-section">
       <Center>
-        <h1>Testimonials</h1>
+        <h1 style={{ backgroundColor: "#2EB9C4" }}>Testimonials</h1>
       </Center>
       <div className="testimonial-container">
         <Stack
@@ -22,30 +22,16 @@ export default function Testimonials() {
           spacing={{ base: 8, md: 10 }}
           align={"center"}
           direction={"column"}>
-          <Text
-            fontSize={{ base: "xl", md: "2xl" }}
-            textAlign={"center"}
-            maxW={"3xl"}>
-            We had an incredible experience working with Chakra Templates and
-            were impressed they made such a big difference in only three weeks.
-            Our team is so grateful for the wonderful improvements they made and
-            their ability to get familiar with the product concept so quickly.
+          <Text fontSize={{ base: "md", md: "xl" }} textAlign={"center"}>
+            I am really happy and thankful for the services that is provided by
+            Rupendra team and fully satisfied. will recommend other members to get
+            services from My ITR team. They are always available for any support
+            whenever needed.
           </Text>
           <Box textAlign={"center"}>
-            <Avatar
-              src={
-                "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
-              }
-              alt={"Jenny Wilson"}
-              mb={2}
-            />
+            <Avatar src={".images/men.png"} alt={"Abhay"} mb={2} />
 
-            <Text fontWeight={600}>Jenny Wilson</Text>
-            <Text
-              fontSize={"sm"}
-              color={useColorModeValue("gray.400", "gray.400")}>
-              Vice President
-            </Text>
+            <Text fontWeight={600}>Abhay</Text>
           </Box>
         </Stack>
         <Stack
@@ -56,29 +42,18 @@ export default function Testimonials() {
           align={"center"}
           direction={"column"}>
           <Text
-            fontSize={{ base: "xl", md: "2xl" }}
+            fontSize={{ base: "md", md: "xl" }}
             textAlign={"center"}
             maxW={"3xl"}>
-            We had an incredible experience working with Chakra Templates and
-            were impressed they made such a big difference in only three weeks.
-            Our team is so grateful for the wonderful improvements they made and
-            their ability to get familiar with the product concept so quickly.
+            Good Services by Mr. Rupendra Chaubey, the entire process of
+            starting from filing the return till refund is completely smooth &
+            seamless. I strongly recommend to try their services once & you
+            never turned back.
           </Text>
           <Box textAlign={"center"}>
-            <Avatar
-              src={
-                "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
-              }
-              alt={"Jenny Wilson"}
-              mb={2}
-            />
+            <Avatar src={"./images/man.png"} alt={"Ankit"} mb={2} />
 
-            <Text fontWeight={600}>Jenny Wilson</Text>
-            <Text
-              fontSize={"sm"}
-              color={useColorModeValue("gray.400", "gray.400")}>
-              Vice President
-            </Text>
+            <Text fontWeight={600}>Ankit</Text>
           </Box>
         </Stack>
       </div>

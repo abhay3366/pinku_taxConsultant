@@ -4,7 +4,7 @@ import Footer from "./Component/Footer";
 // import Footer from "./Component/Footer";
 import HeroSection from "./Component/HeroSection";
 import { Navbar } from "./Component/Navbar";
-import Price from "./Component/Price";
+// import Price from "./Component/Price";
 import Reasion from "./Component/Reasion";
 import Services from "./Component/Services";
 import Testimonials from "./Component/Testimonials";

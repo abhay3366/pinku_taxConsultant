@@ -1,13 +1,23 @@
 .navbarBox {
-  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    60deg,
+    #3d3393 0%,
+    #2b76b9 37%,
+    #2cacd1 65%,
+    #35eb93 100%
+  );
   padding: 1.6rem;
 }
-.logo {
-  color: red;
-  padding-left: 3rem;
+.desktop-logo {
+  width: 10rem;
+  height: 3rem;
 }
 .mobile-view-logo {
   display: none;
+}
+.desktop-contact-button{
+  background-color: #2cacd1;
+  padding: .8rem 1.2rem;
 }
 .navbar-data-container {
   display: flex;
@@ -16,6 +26,10 @@
 .navlink-container {
   display: flex;
   gap: 2rem;
+  color: white;
+}
+.contact-button {
+  background-color: #151616;
 }
 .navbar-contact {
   padding-right: 2rem;
@@ -28,7 +42,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  background-color: #defff6;
+  padding: 4rem 0;
+  /* background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%); */
 }
 .hero-data-container {
   width: 70%;
@@ -42,11 +57,11 @@
   gap: 2rem;
 }
 .hero-consulation {
-  background-color: #ffab66 !important;
-  box-shadow: rgba(32, 243, 144, 0.8) 8px 5px;
+  background-color: #2b82be !important;
+  box-shadow: #30c4b9 5px 5px;
 }
 .hero-consulation:hover {
-  background-color: #dda336 !important;
+  background-color: #30c4b9 !important;
 }
 .hero-serviceBtn {
   background-color: rgb(255, 255, 255) !important;
@@ -54,17 +69,18 @@
   border: 2px solid black !important;
 }
 .warning {
-  border-color: #ffab66 !important;
-  color: #ffab66 !important;
+  border-color: #2b82be !important;
+  color: #2b82be !important;
 }
 
 .warning:hover {
-  background: #ffab66 !important;
+  background: #30c4b9 !important;
   color: white !important;
 }
 .hero-data-container h1 {
   font-size: 2.7rem;
   font-weight: 600;
+  padding: 1rem 3rem;
 }
 .hero-image-container {
   width: 90%;
@@ -80,8 +96,7 @@
 }
 
 /* Why choose us */
-.choose-container {
-}
+
 .choose-section {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
@@ -101,7 +116,7 @@
 /* tax relief */
 .tax-relif-section {
   padding: 4rem 0;
-  background-color: #defff6;
+  background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
   margin-top: 5rem;
 }
 .tax-relif-container {
@@ -125,15 +140,18 @@
 /* services */
 .services-section h1 {
   font-size: 1.5rem;
-  padding: 2rem 0;
+  margin: 2rem 0;
   display: flex;
+  display: inline-flex;
   justify-content: center;
+  padding: 0px 0.8rem;
+  background-color: #2eb9c4;
 }
 .services-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  grid-template-rows: 13rem 13rem;
+  grid-template-rows: 17rem 17rem;
   width: 80%;
   margin: auto;
 }
@@ -146,14 +164,13 @@
 .service-box {
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
-}
-.services-container div {
-  padding: 1rem;
   overflow: hidden;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 1rem;
 }
+
 .services-container div h2 {
   display: flex;
   flex-direction: column;
@@ -169,14 +186,17 @@
 .testimonial-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background-color: #f6f6f6 !important;
 }
 .testimonials-section h1 {
+  margin-top: 2rem;
+  padding: 1px 1rem;
   font-size: 1.5rem;
-  padding: 2rem 0;
+  margin-bottom: 2rem;
 }
 /* footer container */
 .footer-section {
-  background-color: #6e6965;
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 }
 .footer-container {
   width: 90%;

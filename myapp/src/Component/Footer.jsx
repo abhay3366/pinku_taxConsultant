@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="footer-section">
         <div className="footer-container">
           <div className="footer-box1">
-            <img src="#" alt="" />
+            <img src="./images/4.png" alt="logo" className="desktop-logo" />
             <h2>
               @ 2023 abhya kant tiwari. All right <br /> reserved
             </h2>
@@ -73,7 +73,7 @@ const Footer = () => {
             <h1>Stay Up To Date</h1>
             <Stack spacing={4}>
               <InputGroup size="sm">
-                <Input placeholder="Email" w={300}  />
+                <Input placeholder="Email" w={300} />
                 <Button color={"orange.500"}>Submit</Button>
               </InputGroup>
             </Stack>

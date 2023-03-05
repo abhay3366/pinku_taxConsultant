@@ -18,15 +18,13 @@ import {
 } from "@chakra-ui/react";
 import { AiOutlineClose } from "react-icons/ai";
 import { GoThreeBars } from "react-icons/go";
+import { BsFillTelephoneFill } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 
 import "../css/navbar_hero.css";
 
-
-
 export function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
- 
 
   return (
     <>
@@ -39,9 +37,13 @@ export function Navbar() {
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
           />
-          <div className="mobile-view-logo">Logo</div>
+          <div className="mobile-view-logo">
+            <img src="./images/logo6.png" alt="logo" />
+          </div>
           <div className="navbar-data-container">
-            <div className="logo">Logo</div>
+            <div className="logo">
+              <img src="./images/4.png" alt="logo" className="desktop-logo" />
+            </div>
             <div className="navlink-container">
               <NavLink to="#">Home</NavLink>
               <NavLink to="#">About Us</NavLink>
@@ -49,7 +51,11 @@ export function Navbar() {
               <NavLink to="#">Testimonial</NavLink>
               <NavLink to="#">Contact Us</NavLink>
             </div>
-            <div className="navbar-contact">Contact</div>
+            <div className="navbar-contact">
+              <button className="desktop-contact-button">
+                <BsFillTelephoneFill style={{display:"inline",color:"orange",paddingTop:"6",paddingRight:"4"}}/><a href="tel:+98395 36210" style={{color:"white"}}>+98395 36210</a>
+              </button>
+            </div>
           </div>
         </div>
 
@@ -61,12 +67,16 @@ export function Navbar() {
               <NavLink to="#">About Us</NavLink>
               <NavLink to="#">Our Service</NavLink>
               <NavLink to="#">Testimonial</NavLink>
-              <NavLink to="#">Contact Us</NavLink>
+              <NavLink to="#">
+                <input type="button" value="" />
+                <button className="contact-button">
+                  <a href="tel:+98395 36210">+98395 36210</a>
+                </button>
+              </NavLink>
             </div>
           </Box>
         ) : null}
       </div>
-
     </>
   );
 }

@@ -7,11 +7,14 @@ import {
 } from "react-icons/bs";
 import { TbFileSpreadsheet } from "react-icons/tb";
 import { MdAppRegistration } from "react-icons/md";
+import { Center } from "@chakra-ui/react";
 const Services = () => {
   return (
     <>
       <div className="services-section">
-        <h1>Services</h1>
+        <Center>
+          <h1>Services</h1>
+        </Center>
         <div className="services-container">
           <div className="service-box">
             <h2>
