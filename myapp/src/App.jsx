@@ -1,4 +1,5 @@
 import Choose from "./Component/Choose";
+import Contact from "./Component/Contact";
 import Footer from "./Component/Footer";
 // import Coursel from "./Component/Coursel";
 // import Footer from "./Component/Footer";
@@ -18,7 +19,7 @@ function App() {
       <Services />
       <Reasion/>
       <Testimonials/>
-      {/* <Price /> */}
+      <Contact/>
       <Footer/>
     </div>
   );

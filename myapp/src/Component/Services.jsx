@@ -11,7 +11,7 @@ import { Center } from "@chakra-ui/react";
 const Services = () => {
   return (
     <>
-      <div className="services-section">
+      <div className="services-section" id="services">
         <Center>
           <h1>Services</h1>
         </Center>
@@ -35,7 +35,7 @@ const Services = () => {
             <p>
               Balance sheet is a financial statement that shows the financial
               position of a company at a particular point in time. It provides a
-              snapshot of the company's assets, liabilities, and equity.
+              snapshot ..
             </p>
             <p></p>
           </div>

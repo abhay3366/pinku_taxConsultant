@@ -10,16 +10,16 @@ import {
 
 export default function Testimonials() {
   return (
-    <div className="testimonials-section">
+    <div className="testimonials-section" id="testimonials">
       <Center>
         <h1 style={{ backgroundColor: "#2EB9C4" }}>Testimonials</h1>
       </Center>
       <div className="testimonial-container">
         <Stack
           bg={useColorModeValue("gray.50", "gray.800")}
-          py={16}
+          py={10}
           px={8}
-          spacing={{ base: 8, md: 10 }}
+          spacing={{ base: 6, md: 10 }}
           align={"center"}
           direction={"column"}>
           <Text fontSize={{ base: "md", md: "xl" }} textAlign={"center"}>
@@ -36,7 +36,7 @@ export default function Testimonials() {
         </Stack>
         <Stack
           bg={useColorModeValue("gray.50", "gray.800")}
-          py={16}
+          py={10}
           px={8}
           spacing={{ base: 8, md: 10 }}
           align={"center"}

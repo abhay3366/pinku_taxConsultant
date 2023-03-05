@@ -1,10 +1,11 @@
 import { ReactNode } from "react";
+import {Link} from "react-scroll"
 import {
   Box,
   Flex,
   Avatar,
   HStack,
-  Link,
+  
   IconButton,
   Button,
   Menu,
@@ -19,7 +20,7 @@ import {
 import { AiOutlineClose } from "react-icons/ai";
 import { GoThreeBars } from "react-icons/go";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
+
 
 import "../css/navbar_hero.css";
 
@@ -31,29 +32,74 @@ export function Navbar() {
       <div>
         <div className="navbarBox">
           <IconButton
+            style={{ backgroundColor: "#34E598" }}
             size={"md"}
-            icon={isOpen ? <AiOutlineClose /> : <GoThreeBars />}
+            icon={
+              isOpen ? (
+                <AiOutlineClose style={{ marginLeft: "10px" }} />
+              ) : (
+                <GoThreeBars style={{ marginLeft: "10px" }} />
+              )
+            }
             aria-label={"Open Menu"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
           />
           <div className="mobile-view-logo">
-            <img src="./images/logo6.png" alt="logo" />
+            <img src="./images/4.png" alt="logo" className="desktop-logo" />
           </div>
           <div className="navbar-data-container">
             <div className="logo">
               <img src="./images/4.png" alt="logo" className="desktop-logo" />
             </div>
             <div className="navlink-container">
-              <NavLink to="#">Home</NavLink>
-              <NavLink to="#">About Us</NavLink>
-              <NavLink to="#">Our Service</NavLink>
-              <NavLink to="#">Testimonial</NavLink>
-              <NavLink to="#">Contact Us</NavLink>
+              <Link to="#" className="navlink">
+                Home
+              </Link>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="navlink">
+                About Us
+              </Link>
+              <Link
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="navlink">
+                Our Service
+              </Link>
+              <Link
+                to="testimonials"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="navlink">
+                Testimonial
+              </Link>
+              <Link to="#" className="navlink">
+                Contact Us
+              </Link>
             </div>
             <div className="navbar-contact">
               <button className="desktop-contact-button">
-                <BsFillTelephoneFill style={{display:"inline",color:"orange",paddingTop:"6",paddingRight:"4"}}/><a href="tel:+98395 36210" style={{color:"white"}}>+98395 36210</a>
+                <BsFillTelephoneFill
+                  style={{
+                    display: "inline",
+                    color: "orange",
+                    paddingTop: "6",
+                    paddingRight: "4",
+                  }}
+                />
+                <a href="tel:+98395 36210" style={{ color: "white" }}>
+                  +98395 36210
+                </a>
               </button>
             </div>
           </div>
@@ -63,16 +109,24 @@ export function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <div className="mobile-navlink-container">
-              <NavLink to="#">Home</NavLink>
-              <NavLink to="#">About Us</NavLink>
-              <NavLink to="#">Our Service</NavLink>
-              <NavLink to="#">Testimonial</NavLink>
-              <NavLink to="#">
+              <Link to="#" className="navlink">
+                Home
+              </Link>
+              <Link to="#" className="navlink">
+                About Us
+              </Link>
+              <Link to="#" className="navlink">
+                Our Service
+              </Link>
+              <Link to="#" className="navlink">
+                Testimonial
+              </Link>
+              <Link to="#" className="navlink">
                 <input type="button" value="" />
                 <button className="contact-button">
                   <a href="tel:+98395 36210">+98395 36210</a>
                 </button>
-              </NavLink>
+              </Link>
             </div>
           </Box>
         ) : null}

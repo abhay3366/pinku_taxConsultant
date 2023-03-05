@@ -9,13 +9,14 @@ import {
   Button,
   Image,
   Box,
+  Center,
 } from "@chakra-ui/react";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
 const Choose = () => {
   return (
     <>
-      <div className="choose-container">
+      <div className="choose-container" id="about">
         <Card
           className="choose-section"
           direction={{ base: "column", sm: "row" }}
@@ -29,13 +30,23 @@ const Choose = () => {
           />
 
           <Stack>
-            <CardBody pr={9}>
-              <Heading size="sm" bg={"#2EB9C4 "} display={"inline-block"} p={2}>
-                Why Choose Us
-              </Heading>
+            <CardBody pr={{ base: "9", md: "", lg: "56px" }}>
+              <Center>
+                <Heading
+                  size="sm"
+                  bg={"#2EB9C4 "}
+                  display={"inline-block"}
+                  p={4}
+                  className="choose-heading">
+                  Why Choose Us
+                </Heading>
+              </Center>
 
-              <Text py="9" fontSize="4xl">
-                We{" "}
+              <Text
+                py="9"
+                // fontSize="4xl"
+                fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}>
+                We
                 <span style={{ backgroundColor: "#2EB9C4" }}>
                   Experienced In Tax Preparation
                 </span>
