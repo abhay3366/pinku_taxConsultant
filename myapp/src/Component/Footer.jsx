@@ -13,13 +13,14 @@ import {
   AiFillTwitterSquare,
 } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 const Footer = () => {
   return (
     <>
       <div className="footer-section">
         <div className="footer-container">
-          <div className="mobile-footer" >
-            <p >&copy; 2023 Copyright :Rupendra Chaubey & Company.</p>
+          <div className="mobile-footer">
+            <p>&copy; 2023 Copyright :Rupendra Chaubey & Company.</p>
           </div>
           <div className="footer-box1">
             <img src="./images/4.png" alt="logo" className="desktop-logo" />
@@ -41,35 +42,49 @@ const Footer = () => {
           <div className="footer-box2">
             <h1>RUPENDRA CHAUBEY & COMPANY</h1>
             <div>
-              <NavLink to="#">
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                className="navlink"
+                duration={500}>
                 <Text>About Us</Text>
-              </NavLink>
-              <NavLink to="#">
+              </Link>
+              <Link
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={50}
+                className="navlink"
+                duration={500}>
                 <Text>Our Services</Text>
-              </NavLink>
-              <NavLink to="#">
+              </Link>
+              <Link
+                to="testimonials"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="navlink">
                 <Text>Testimonial</Text>
-              </NavLink>
-              <NavLink to="#">
+              </Link>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                className="navlink"
+                duration={500}>
                 <Text>Contact Us</Text>
-              </NavLink>
+              </Link>
             </div>
           </div>
           <div className="footer-box3">
-            <h1>Support</h1>
-            <div>
-              <NavLink to="#">
-                <Text>About Us</Text>
-              </NavLink>
-              <NavLink to="#">
-                <Text>Our Services</Text>
-              </NavLink>
-              <NavLink to="#">
-                <Text>Testimonial</Text>
-              </NavLink>
-              <NavLink to="#">
-                <Text>Contact Us</Text>
-              </NavLink>
+            <h1>Opening Hours</h1>
+            <div className="opening-time">
+              <div>Mon-Sat ----- 10am-6pm</div>
+              
             </div>
           </div>
           <div className="footer-box4">

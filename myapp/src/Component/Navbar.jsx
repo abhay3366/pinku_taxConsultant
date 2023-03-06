@@ -83,7 +83,13 @@ export function Navbar() {
                 className="navlink">
                 Testimonial
               </Link>
-              <Link to="#" className="navlink">
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="navlink">
                 Contact Us
               </Link>
             </div>
@@ -109,19 +115,49 @@ export function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <div className="mobile-navlink-container">
-              <Link to="#" className="navlink">
+              <Link
+                to="#"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="navlink">
                 Home
               </Link>
-              <Link to="#" className="navlink">
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="navlink">
                 About Us
               </Link>
-              <Link to="#" className="navlink">
+              <Link
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="navlink">
                 Our Service
               </Link>
-              <Link to="#" className="navlink">
+              <Link
+                to="testimonials"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="navlink">
                 Testimonial
               </Link>
-              <Link to="#" className="navlink">
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="navlink">
                 <input type="button" value="" />
                 <button className="contact-button">
                   <a href="tel:+98395 36210">+98395 36210</a>
