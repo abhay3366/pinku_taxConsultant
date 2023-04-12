@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
         <div className="footer-container">
           <div className="mobile-footer">
-            <p>&copy; 2023 Copyright :Rupendra Chaubey & Company.</p>
+            <Text>&copy; 2023 Copyright :Rupendra Chaubey & Company.</Text>
           </div>
           <div className="footer-box1">
             <img src="./images/4.png" alt="logo" className="desktop-logo" />
