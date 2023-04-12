@@ -360,6 +360,10 @@
     padding-right: 0px;
   }
   .mobile-view-logo {
+    display: block;
+   
+  }
+  .navbar_contact{
     display: none;
   }
   .desktop-contact-button {
