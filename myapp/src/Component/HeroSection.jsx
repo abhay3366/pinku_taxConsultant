@@ -1,17 +1,14 @@
 import { Button } from "@chakra-ui/react";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import {
-  Box,
+ 
   chakra,
-  Container,
-  Link,
-  SimpleGrid,
-  Stack,
+
   Text,
   VisuallyHidden,
-  Input,
-  IconButton,
+  
   useColorModeValue,
 } from "@chakra-ui/react";
 
@@ -77,19 +74,23 @@ const HeroSection = () => {
           </p>
           <div className="hero-btn">
             <NavLink>
-              {/* <div> */}
               <Button colorScheme="linkedin" className="hero-consulation">
                 Get a Free Consulation
               </Button>
-              {/* </div> */}
             </NavLink>
-            <NavLink>
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="navlink">
               <Button
                 colorScheme="linkedin"
                 className="hero-serviceBtn warning">
                 View Our Services
               </Button>
-            </NavLink>
+            </Link>
           </div>
         </div>
         <div className="hero-image-container">

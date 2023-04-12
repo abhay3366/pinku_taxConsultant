@@ -2,20 +2,12 @@ import { ReactNode } from "react";
 import {Link} from "react-scroll"
 import {
   Box,
-  Flex,
-  Avatar,
-  HStack,
+
   
   IconButton,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
+
   useDisclosure,
-  useColorModeValue,
-  Stack,
+ 
 } from "@chakra-ui/react";
 import { AiOutlineClose } from "react-icons/ai";
 import { GoThreeBars } from "react-icons/go";
@@ -53,7 +45,7 @@ export function Navbar() {
               <img src="./images/4.png" alt="logo" className="desktop-logo" />
             </div>
             <div className="navlink-container">
-              <Link to="#" className="navlink">
+              <Link to="#" className="navlink" as="2">
                 Home
               </Link>
               <Link

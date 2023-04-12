@@ -1,3 +1,15 @@
+.whatsapp {
+  position: fixed;
+  display: block;
+  top: 90%;
+  z-index: 99;
+  float: right;
+  /* right: 2%; */
+  /* margin-right: 53px; */
+  float: 13px;
+  margin-left: 11px;
+  width: 51px;
+}
 .navbarBox,
 .contact-container {
   background-image: linear-gradient(
@@ -43,7 +55,7 @@
   width: 100%;
 }
 .navlink:hover {
-  color: rgb(224, 103, 22) !important;
+  color: brown !important;
   cursor: pointer;
 }
 .hero-container {
@@ -199,6 +211,12 @@
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
+/* contact section */
+.contactBox {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
 /* footer container */
 .footer-section {
   background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
@@ -279,6 +297,9 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  .hero-btn{
+    margin-top: 1.5rem;
+  }
   .choose-section {
     grid-template-columns: repeat(1, 1fr) !important;
     padding-top: 1.5rem;
@@ -288,7 +309,7 @@
     width: 95%;
     gap: 0rem;
   }
-    .hero-data-container p{
+  .hero-data-container p {
     text-align: center;
   }
   .services-container {
@@ -299,7 +320,7 @@
     margin: auto;
     text-align: justify;
   }
- 
+
   .tax-relif-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -310,8 +331,9 @@
     padding-top: 1.5rem;
   }
   /* contact */
-  .contact-container {
-    background-color: red !important;
+  .contactBox {
+    flex-direction: column;
+    gap: 1rem;
   }
   .footer-container {
     display: grid;
@@ -351,7 +373,7 @@
     font-size: 1.5rem;
     font-weight: 600;
   }
-  .hero-data-container p{
+  .hero-data-container p {
     text-align: center;
   }
   .hero-container {
