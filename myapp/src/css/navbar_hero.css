@@ -353,8 +353,8 @@
 
 @media only screen and (max-width: 30em) {
   .desktop-logo {
-    width: 7rem;
-    height: 2rem;
+    width: 8.8rem;
+    height: 3rem;
   }
   .navbar-contact {
     padding-right: 0px;
@@ -363,6 +363,7 @@
     display: block;
     position: relative;
     left: 5rem;
+    
   }
   .navbar_contact{
     display: none;
