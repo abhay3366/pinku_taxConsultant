@@ -361,13 +361,15 @@
   }
   .mobile-view-logo {
     display: block;
-   
+    position: relative;
+    left: 5rem;
   }
   .navbar_contact{
     display: none;
   }
   .desktop-contact-button {
     padding: 0.5rem;
+    display: none;
   }
   .hero-container {
     display: grid;
